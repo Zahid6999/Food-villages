@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Flex:opsz,wdth,wght,GRAD,XTRA,YOPQ,YTAS,YTDE,YTUC@8..144,100,200,0,468,79,750,-203,712;8..144,100,400,0,468,79,750,-203,712;8..144,100,500,0,468,79,750,-203,712;8..144,100,600,0,468,79,750,-203,712;8..144,100,800,0,468,79,750,-203,712;8..144,150,489,0,466,105,700,-155,568;8..144,150,800,-60,519,55,731,-206,669&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap"); */
+
+.roboto {
+  font-family: "Roboto Flex", sans-serif;
+}
+.robotoVariant {
+  font-family: "Roboto Flex", sans-serif;
+
+  font-variation-settings: "GRAD" -60, "Slnt" 0, "XTRA" 515, "XOPQ" 96,
+    "YOPQ" 50, "YTLC" 550, "YTUC" 620, "YTAS" 770, "YTDE" -150, "YTFI" 752;
+}
+
+body {
+  background: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+a {
+  font-weight: 500;
+  color: whitesmoke;
+  text-decoration: inherit;
+}
+a:hover {
+  color: whitesmoke;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: whitesmoke;
+  }
+}
